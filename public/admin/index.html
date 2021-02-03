@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Admin Panel</title>
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		  <div class="container">
+		  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+		  	  <span class="navbar-toggler-icon"></span>
+		  	</button>
+		  	<a class="navbar-brand" href="/">Let's Travel</a>
+
+		  	<div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+		  	  <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+		  	    <li class="nav-item active">
+		  	      <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+		  	    </li>
+		  	    <li class="nav-item">
+		  	      <a class="nav-link" href="#">About Us</a>
+		  	    </li>
+		  	    <li class="nav-item">
+		  	      <a class="nav-link" href="#">Contacts</a>
+		  	    </li>
+		  	    <li class="nav-item">
+		  	      <a class="nav-link" href="#">Admin Page</a>
+		  	    </li>
+		  	  </ul>
+		  	  <form class="form-inline my-2 my-lg-0">
+		  	    <input class="form-control mr-sm-2" type="search" placeholder="Phone number" aria-label="Search">
+		  	    <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Call me</button>
+		  	  </form>
+		  	</div>
+		  </div>
+		</nav>
+	</header>
+
+	<main>
+		<div class='container page-wrapper'>
+			<h1>Admin Page</h1>
+			<hr>
+			<div class='row'>
+				<div class='col-3'>
+					<div class='card'>
+						<div class='card-block'>
+							<div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+							    <a class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Articles</a>
+							    <a class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Mails</a>
+							    <a class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Callback requests</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class='col-9'>
+					<div class='card'>
+						<div class='card-block'>
+							<div class="tab-content" id="v-pills-tabContent">
+							    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+							    	<button class='btn btn-primary mb-3'>Add Post</button>
+							    	<div class='articles'>
+							    		<!-- ...Dynamic Content... -->
+							    	</div>
+							    </div>
+							    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">Mails content</div>
+							    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">Callback requests content</div>
+							    <div class="tab-pane fade" id="v-pills-create-post" role="tabpanel" aria-labelledby="v-pills-create-post">
+							    	<h2 class='h3 my-3'>Create Post</h2>
+							    	<div class="mb-3">
+									  <label for="article-title" class="form-label">Title</label>
+									  <input type="text" class="form-control" id="article-title" placeholder="Title of the article">
+									</div>
+
+									<div class="mb-3">
+									  <label for="article-text" class="form-label">Description</label>
+									  <input type="text" class="form-control" id="article-text" placeholder="Description of the article">
+									</div>
+									
+									<div class="mb-3">
+									  <label for="article-text" class="form-label">Text</label>
+									  <textarea class="form-control" id="article-textFull" placeholder="Text of the article"></textarea>
+									</div>
+
+									<div class="mb-3">
+									  <label for="article-country" class="form-label">Country</label>
+									  <input type="text" class="form-control" id="article-country" placeholder="Country name">
+									</div>
+
+									<div class="mb-3">
+									  <label for="article-image" class="form-label">Default file input example</label>
+									  <input class="article-image" type="file" id="article-image">
+									</div>
+									<button class='add-post btn btn-success'>Post</button>
+							    </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+	<script src='/scripts/article.js'></script>
+	<script src='scripts/main.js'></script>
+</body>
+</html>
